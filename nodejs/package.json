@@ -1,0 +1,11 @@
+{
+	"name": "yiinode",
+	"description": "Real Time Chat With Yii2, NodeJS, Socket.io and ExpressJS",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/virbo/tutorial.git",
+	"dependencies": {
+		"express": "^4.17.1",
+		"socket.io": "^2.2.0"
+	}
+}
