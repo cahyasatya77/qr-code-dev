@@ -6,6 +6,7 @@
 	"repository": "https://github.com/virbo/tutorial.git",
 	"dependencies": {
 		"express": "^4.17.1",
+		"serialport": "^7.1.5",
 		"socket.io": "^2.2.0"
 	}
 }

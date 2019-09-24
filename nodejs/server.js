@@ -22,7 +22,17 @@ io.on('connection', function(socket){
             io.emit('gagal');
         })
 });
+// Arduino to CMD
+const SerialPort = require('serialport');
+const Readline = SerialPort.parsers.Readline;
+const usbport = new SerialPort('COM4');
+const parser = usbport.pipe(new Readline());
+parser.on('data', function(data){
+    console.log('data : '+data.kode);
+    io.emit('data', {data: data});
+})
 
+// server start
 http.listen(port, function(){
 	console.log("Node server listening on port " + port);
 });
